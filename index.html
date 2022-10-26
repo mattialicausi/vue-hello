@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/vue@3"></script>
     <title>Vue Hello</title>
 </head>
 <body>
     
 <div id="app">
-    <h1>{{title}}</h1>
+    <h1 :class = 'myClass'>{{title}}</h1>
+    <button @click = 'cambiaColore'>Clicca per cambiare il colore</button>
+    <img :src="myImg" alt="">
 </div>
 
     <script src="./js/script.js"></script>

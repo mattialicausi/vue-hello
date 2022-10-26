@@ -8,7 +8,16 @@ const {createApp} = Vue;
 const titleHTML = createApp({
     data(){
         return {
-            title: 'Vue Hello'
+            title: 'Vue Hello',
+            myClass: 'verde',
+            myImg: ''
+        }
+    },
+    //utilizzo metodo per assegnare una funzione
+    methods: {
+        cambiaColore(){
+            this.myClass ='verde';
+            this.myImg = './img/ita.png';
         }
     }
 });
