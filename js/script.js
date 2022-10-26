@@ -9,14 +9,14 @@ const titleHTML = createApp({
     data(){
         return {
             title: 'Vue Hello',
-            myClass: 'verde',
+            myClass: 'black',
             myImg: ''
         }
     },
     //utilizzo metodo per assegnare una funzione
     methods: {
         cambiaColore(){
-            this.myClass ='verde';
+            this.myClass = this.myClass === 'verde' ? 'black' : 'verde';
             this.myImg = './img/ita.png';
         }
     }
